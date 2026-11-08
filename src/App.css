@@ -1,0 +1,39 @@
+/* global section spacing helpers */
+.section {
+  padding: 96px 0;
+}
+.section-sm { padding: 64px 0; }
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--violet);
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: clamp(30px, 4vw, 46px);
+  color: var(--navy);
+  max-width: 720px;
+}
+
+.section-lead {
+  margin-top: 18px;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; gap: 64px; }
+}

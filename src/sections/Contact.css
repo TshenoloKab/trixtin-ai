@@ -1,0 +1,98 @@
+.contact-section {
+  background: linear-gradient(180deg, var(--grey) 0%, var(--white) 100%);
+}
+.contact-info {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact-info-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+.contact-info-item a, .contact-info-item span:last-child {
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact-form-wrap {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 520px) {
+  .form-row { grid-template-columns: 1fr 1fr; }
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--grey);
+  color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--violet);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(118,87,232,0.15);
+}
+.form-error {
+  color: #d64545;
+  font-size: 12px;
+  font-weight: 500;
+}
+.form-submit { align-self: flex-start; }
+.contact-success {
+  text-align: center;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.success-icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--violet), var(--cyan));
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact-success h3 { color: var(--navy); font-size: 22px; }
+.contact-success p { color: var(--muted); }

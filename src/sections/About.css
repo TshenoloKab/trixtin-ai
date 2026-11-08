@@ -1,0 +1,37 @@
+.about-body {
+  margin-top: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 16px;
+}
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.pillar {
+  display: flex;
+  gap: 16px;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.pillar:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(118,87,232,0.25);
+}
+.pillar-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  background: var(--lavender);
+  color: var(--violet);
+  flex-shrink: 0;
+}
+.pillar-icon svg { width: 22px; height: 22px; }
+.pillar h3 { font-size: 17px; color: var(--navy); margin-bottom: 6px; }
+.pillar p { color: var(--muted); font-size: 14px; line-height: 1.6; }

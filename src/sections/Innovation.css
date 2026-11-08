@@ -1,0 +1,94 @@
+.innovation-section {
+  background: var(--white);
+}
+.innovation-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.innovation-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.innovation-icon {
+  width: 42px; height: 42px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  background: var(--lavender);
+  color: var(--violet);
+  flex-shrink: 0;
+}
+.innovation-icon svg { width: 20px; height: 20px; }
+.innovation-item h4 { font-size: 16px; color: var(--navy); margin-bottom: 4px; }
+.innovation-item p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+
+.innovation-visual {
+  display: flex;
+  justify-content: center;
+}
+.orb-stack {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+.orb-1 {
+  width: 260px; height: 260px;
+  top: 20%; left: 10%;
+  background: radial-gradient(circle at 30% 30%, #7657E8, #3a2a8a 70%);
+  opacity: 0.85;
+  animation: float 6s ease-in-out infinite;
+}
+.orb-2 {
+  width: 180px; height: 180px;
+  top: 5%; right: 5%;
+  background: radial-gradient(circle at 30% 30%, #36C8E8, #1a7a95 70%);
+  opacity: 0.7;
+  animation: float 7s ease-in-out infinite reverse;
+}
+.orb-3 {
+  width: 120px; height: 120px;
+  bottom: 8%; right: 18%;
+  background: radial-gradient(circle at 30% 30%, #EAE7FA, #9a90d6 70%);
+  opacity: 0.9;
+  animation: float 5s ease-in-out infinite;
+}
+.orb-card {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 170px;
+}
+.orb-card-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.orb-card-row span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), var(--cyan));
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
